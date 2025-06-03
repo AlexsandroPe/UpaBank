@@ -15,7 +15,7 @@ require_once "user.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     
@@ -30,7 +30,6 @@ require_once "user.php";
                 echo "<p class='nomeUser'>Email: {$user->getEmail()}</p>";
                 echo "<p class='nomeUser'>CPF: {$user->getCpf()}</p>";
                 // echo "<p class='nomeUser'>number: {$user->getAccount()->getNumber()} </p>";
-
                 ?>
             </div>
             <div class="accountData">

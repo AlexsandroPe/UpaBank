@@ -27,6 +27,10 @@ class Account {
 
     public function withdraw($amount)
     {
-        $this->balance -= $amount;
+        if($amount != 0 || $this->balance > 0){
+            $this->balance -= $amount;
+        }else {
+            return false;
+        }
     }
 }

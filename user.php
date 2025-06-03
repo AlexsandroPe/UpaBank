@@ -4,7 +4,7 @@ class User {
     private $name;
     private $cpf;
     private $email;
-    private $account;
+    private $account;   
 
     public function __construct(string $name, string $cpf, string $email)
     {

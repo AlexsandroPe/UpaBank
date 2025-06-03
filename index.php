@@ -14,7 +14,7 @@
 <body>
     <main class="main">
         <div class="logoName">
-            <h1>banco etec</h1>
+            <h1>Upabank</h1>
         </div>
         <div class="formulario">
             <form action="registerManager.php" method="post">

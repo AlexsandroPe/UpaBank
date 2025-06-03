@@ -19,12 +19,11 @@ session_start();
         if($deposit != 0){
             $user->getAccount()->deposit($deposit);        
             header("location: accountPage.php");
-        } 
+        }
     }else {
         if($_SERVER['REQUEST_URI'] == $_SERVER['PHP_SELF']){
             header("location: accountPage.php");
         }        
-        
     }
 
     // echo $_SESSION['client']->getName();

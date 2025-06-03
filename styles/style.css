@@ -8,11 +8,11 @@ main {
   flex-direction: column;
   align-items: center;
   height: 100%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .formulario {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
   width: 500px;
   padding: 40px;
@@ -32,7 +32,7 @@ main {
   gap: 8px;
   flex-direction: column;
   align-content: flex-start;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .inputData input {

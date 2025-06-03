@@ -5,8 +5,6 @@ require_once "user.php";
 
     $user = $_SESSION["client"];
     // vou chamar aqui pra ver se da bom laaaaa em baixo eu chamar pq eu preciso passar os valores pra ele ne e ele tem a conta dentro dele
-     
-    
 ?>
 
 <!DOCTYPE html>
@@ -24,8 +22,8 @@ require_once "user.php";
         <div class="dados">
             <div class="personalData">
                 <h2 style="text-align: center;">Dados pessoais</h2>
+                
                 <?php     
-              
                 echo "<p class='nomeUser'>Nome: {$user->getName()}</p>";
                 echo "<p class='nomeUser'>Email: {$user->getEmail()}</p>";
                 echo "<p class='nomeUser'>CPF: {$user->getCpf()}</p>";
@@ -35,11 +33,9 @@ require_once "user.php";
             <div class="accountData">
                 <h2 style="text-align: center;">Dados da conta</h2>
                 <?php 
-                
                 // require_once "accountManager.php;
-            //  $deposit = $_POST["deposit"];
-            //  $client->getAccount()->deposit($deposit);
-                
+                //$deposit = $_POST["deposit"];
+                //$client->getAccount()->deposit($deposit);
                     echo "<p class='nomeUser'>Número conta: {$user->getAccount()->getNumber()}</p>";
                     echo "<p class='nomeUser'>Saldo:{$user->getAccount()->getBalance()}</p>";
                 ?>

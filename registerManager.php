@@ -3,10 +3,6 @@ require_once "user.php";
 require_once "account.php";
 session_start();
 
-
-
-
-    if(!empty($_POST['nome']) && !empty($_POST['CPF']) && !empty($_POST['email'])){
         $nome = $_POST["nome"];
         $email= $_POST["email"];
         $cpf = $_POST["cpf"];
@@ -15,18 +11,11 @@ session_start();
         $account = new Account($number);
         $user->setAccount($account);
         $_SESSION["client"] = $user;
-        header('location: accountPage.php');
-    }else {
-         if($_SERVER['REQUEST_URI'] == $_SERVER['PHP_SELF']){
-            header("location: index.php");
-        } 
-    }
 
+        if($_SESSION['client']){
+            header('location: accountPage.php');
 
+        }
     
-    
-
-
-    
-    echo $_SESSION['client']->getName();
+    // echo $_SESSION['client']->getName();
 ?>
